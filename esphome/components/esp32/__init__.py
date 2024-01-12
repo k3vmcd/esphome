@@ -274,6 +274,7 @@ def _esp_idf_check_versions(value):
         "dev": (cv.Version(5, 1, 2), "https://github.com/espressif/esp-idf.git"),
         "latest": (cv.Version(5, 1, 2), None),
         "recommended": (RECOMMENDED_ESP_IDF_FRAMEWORK_VERSION, None),
+        "custom": (cv.Version(5, 1, 2), "https://github.com/k3vmcd/esp-idf.git"),
     }
 
     if value[CONF_VERSION] in lookups:
